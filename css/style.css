@@ -5,7 +5,7 @@
 }
 
 body {
-  font-size: 16px;
+  font-size: 13px;
   font-family: 'Montserrat' , sans-serif;
 }
 
@@ -21,12 +21,6 @@ a {
 .main-wrapper {
   height: 100vh;
   width: 100%;
-<<<<<<< HEAD
-=======
-  content: '';
-  display: table;
-  clear: both;
->>>>>>> master
 }
 
 .left-bar {
@@ -36,12 +30,16 @@ a {
   background-color: black;
   color: grey;
   font-weight: 600;
-  padding: 10px;
+  padding: 15px;
 }
 
 .left-bar a {
   color: grey;
   text-decoration: none;
+}
+
+a:hover {
+  color: white;
 }
 
 .name img {
@@ -58,8 +56,47 @@ a {
   margin-bottom: 15%;
 }
 
+.first-menu {
+  line-height: 35px;
+}
+
 .playlist-menu i {
   font-size: 2em;
+}
+
+.account {
+ margin-top: 25%;
+}
+
+.app {
+  border-bottom: .5px solid grey;
+  padding-bottom: 5%;
+}
+
+.name span {
+  color: white;
+  font-size: 1.4em;
+}
+
+.name {
+  padding-top: 5%;
+}
+
+.playlist-menu p {
+  padding-top: 10%;
+}
+
+.new-playlist span i {
+  vertical-align: middle;
+}
+
+.nomi-playlist li {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.nomi-playlist li:first-child {
+  padding-top: 5%;
 }
 
 /* main {
@@ -71,7 +108,6 @@ footer {
   height: 100px;
   width: 100%;
 } */
-<<<<<<< HEAD
 
 @media screen and (max-width: 768px) {
   .left-bar {
@@ -84,5 +120,3 @@ footer {
     padding: 10px;
   }
 }
-=======
->>>>>>> master
