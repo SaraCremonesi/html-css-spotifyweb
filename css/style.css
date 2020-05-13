@@ -5,7 +5,7 @@
 }
 
 body {
-  font-size: 13px;
+  font-size: 10px;
   font-family: 'Montserrat' , sans-serif;
 }
 
@@ -21,15 +21,10 @@ a {
 .main-wrapper {
   height: 100vh;
   width: 100%;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-  content: '';
-  display: table;
-  clear: both;
->>>>>>> master
->>>>>>> master
+}
+
+main {
+  height: calc(100% - 70px);
 }
 
 .left-bar {
@@ -62,7 +57,7 @@ a:hover {
 
 .logo img {
   height: 50px;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
 }
 
 .first-menu {
@@ -74,12 +69,12 @@ a:hover {
 }
 
 .account {
- margin-top: 25%;
+ margin-top: 20%;
 }
 
 .app {
   border-bottom: .5px solid grey;
-  padding-bottom: 5%;
+  padding-bottom: 3%;
 }
 
 .name span {
@@ -92,7 +87,7 @@ a:hover {
 }
 
 .playlist-menu p {
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
 .new-playlist span i {
@@ -117,10 +112,6 @@ footer {
   height: 100px;
   width: 100%;
 } */
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> master
 
 @media screen and (max-width: 768px) {
   .left-bar {
@@ -133,8 +124,3 @@ footer {
     padding: 10px;
   }
 }
-<<<<<<< HEAD
-=======
-=======
->>>>>>> master
->>>>>>> master
