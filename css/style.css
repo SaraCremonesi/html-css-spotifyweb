@@ -21,6 +21,12 @@ a {
 .main-wrapper {
   height: 100vh;
   width: 100%;
+<<<<<<< HEAD
+=======
+  content: '';
+  display: table;
+  clear: both;
+>>>>>>> master
 }
 
 .left-bar {
@@ -65,6 +71,7 @@ footer {
   height: 100px;
   width: 100%;
 } */
+<<<<<<< HEAD
 
 @media screen and (max-width: 768px) {
   .left-bar {
@@ -77,3 +84,5 @@ footer {
     padding: 10px;
   }
 }
+=======
+>>>>>>> master
