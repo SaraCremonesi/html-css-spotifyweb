@@ -21,10 +21,22 @@ a {
 .main-wrapper {
   height: 100vh;
   width: 100%;
+<<<<<<< HEAD
 }
 
 main {
   height: calc(100% - 70px);
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  content: '';
+  display: table;
+  clear: both;
+>>>>>>> master
+>>>>>>> master
+>>>>>>> master
 }
 
 .left-bar {
@@ -112,6 +124,13 @@ footer {
   height: 100px;
   width: 100%;
 } */
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
+>>>>>>> master
 
 @media screen and (max-width: 768px) {
   .left-bar {
@@ -124,3 +143,11 @@ footer {
     padding: 10px;
   }
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> master
+>>>>>>> master
+>>>>>>> master
