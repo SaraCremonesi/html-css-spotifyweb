@@ -1,3 +1,4 @@
+/* GENERALI */
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +23,7 @@ ul {
   padding-left: 0;
 }
 
+/* MAIN */
 .main-wrapper {
   height: 100vh;
   width: 100%;
@@ -49,11 +51,6 @@ main {
 
 a:hover {
   color: white;
-}
-
-.name img {
-  background-color: grey;
-  border-radius: 50%;
 }
 
 .left-bar img {
@@ -91,6 +88,11 @@ a:hover {
 .name {
   padding-top: 5%;
   margin-left: 1.5%;
+}
+
+.name img {
+  background-color: grey;
+  border-radius: 50%;
 }
 
 .playlist-menu p {
@@ -135,6 +137,7 @@ a:hover {
  color: white;
 }
 
+/* FOOTER */
 footer {
   height: 70px;
   width: 100%;
@@ -212,6 +215,7 @@ footer a:hover {
   font-size: 1.25em;
 }
 
+/* MEDIA QUERY */
 @media screen and (max-width: 768px) {
   .left-bar {
     float: left;
