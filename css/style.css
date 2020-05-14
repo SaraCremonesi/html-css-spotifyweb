@@ -1,7 +1,3 @@
-
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -32,7 +28,7 @@ ul {
 }
 
 main {
-  height: calc(100% - 70px);
+  height: calc( 100vh - 70px );
 }
 
 .left-bar {
@@ -43,7 +39,7 @@ main {
   color: grey;
   font-weight: 600;
   padding: 15px;
-  overflow: hidden; /* per nascondere il contenuto che sborda*/
+  overflow: hidden; /* per nascondere il contenuto che sborda sotto*/
 }
 
 .left-bar a {
@@ -78,7 +74,7 @@ a:hover {
 }
 
  .playlist-menu {
-  height: calc(100vh - 310px); /*per fissare "account" al bordo in basso senza usare il fix*/
+  height: calc(100vh - 305px); /*per fissare "account" al bordo in basso senza usare il fix*/
   overflow: auto;  /*per far apparre la scrollbar*/
 }
 
@@ -94,6 +90,7 @@ a:hover {
 
 .name {
   padding-top: 5%;
+  margin-left: 1.5%;
 }
 
 .playlist-menu p {
@@ -113,10 +110,106 @@ a:hover {
   padding-top: 5%;
 }
 
+.app-content {
+  background-color: #0e294b;
+  height: calc(100vh - 70px);
+}
+
+.top-bar {
+  width: calc(100% - 200px);
+  height: 85px;
+  background-color: black;
+  opacity: 0.8;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.top-bar a {
+ font-size: 1.3em;
+ margin-right: 2%;
+ padding: 1% 2%;
+ border-radius: 50px;
+ border: 0.6px solid white;
+ color: white;
+}
+
 footer {
   height: 70px;
   width: 100%;
-  background-color: lightgrey;
+  background-color: grey;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: white;
+}
+
+.left-block {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: 600;
+}
+
+.left-block h5 {
+  color: white;
+  font-weight: 600;
+  margin: 0;
+}
+
+.left-block-text {
+  vertical-align: middle;
+  margin-left: 8%;
+  margin-right: 20%;
+}
+
+.left-block a {
+  color: #333;
+  margin: 3.5%;
+}
+
+.left-block i {
+  font-size: 1.4em;
+}
+
+.left-block img {
+  height: 45px;
+}
+
+.central-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control i {
+  font-size: 1.7em;
+  color: white;
+}
+
+.control {
+  color: white;
+}
+
+.right-block {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 600;
+}
+
+.right-block i {
+  font-size: 1.25em;
 }
 
 @media screen and (max-width: 768px) {
@@ -136,6 +229,26 @@ footer {
 
   .account {
     line-height: 30px;
+  }
+
+  .account img:last-child {
+    margin-left: 8%;
+  }
+
+  .navigation.visible-xs-block {
+    height: calc(100% - 60px);
+    min-height: 120px;
+  }
+
+  .top-bar {
+    width: calc(100% - 50px);
+    height: 85px;
+    background-color: black;
+    opacity: 0.8;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
 
 }
