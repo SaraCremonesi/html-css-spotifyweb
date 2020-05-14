@@ -1,3 +1,10 @@
+
+
+2) AGGIUSTA LA PARTE RESPONSIVE DELLA LEFT BAR
+3) COME SI CREA IL BORDINO VERDE DEI LINK
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -18,25 +25,17 @@ a {
   color: grey;
 }
 
+ul {
+  padding-left: 0;
+}
+
 .main-wrapper {
   height: 100vh;
   width: 100%;
-<<<<<<< HEAD
 }
 
 main {
   height: calc(100% - 70px);
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-  content: '';
-  display: table;
-  clear: both;
->>>>>>> master
->>>>>>> master
->>>>>>> master
 }
 
 .left-bar {
@@ -47,6 +46,7 @@ main {
   color: grey;
   font-weight: 600;
   padding: 15px;
+  overflow: hidden; /* per nascondere il contenuto che sborda*/
 }
 
 .left-bar a {
@@ -64,7 +64,7 @@ a:hover {
 }
 
 .left-bar img {
-  height: 25px;
+  height: 20px;
 }
 
 .logo img {
@@ -73,15 +73,16 @@ a:hover {
 }
 
 .first-menu {
-  line-height: 35px;
+  line-height: 25px;
 }
 
 .playlist-menu i {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
-.account {
- margin-top: 20%;
+ .playlist-menu {
+  height: calc(100vh - 310px); /*per fissare "account" al bordo in basso senza usare il fix*/
+  overflow: auto;  /*per far apparre la scrollbar*/
 }
 
 .app {
@@ -115,22 +116,11 @@ a:hover {
   padding-top: 5%;
 }
 
-/* main {
-  width: 100%;
-  height: calc( 100% - 100px )
-}
-
 footer {
-  height: 100px;
+  height: 70px;
   width: 100%;
-} */
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> master
->>>>>>> master
+  background-color: lightgrey;
+}
 
 @media screen and (max-width: 768px) {
   .left-bar {
@@ -142,12 +132,13 @@ footer {
     font-weight: 600;
     padding: 10px;
   }
+
+  .logo-small {
+    padding-bottom: 35%;
+  }
+
+  .account {
+    line-height: 30px;
+  }
+
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> master
->>>>>>> master
->>>>>>> master
