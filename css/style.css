@@ -203,6 +203,11 @@ h6 {
   justify-content: space-around;
 }
 
+.recently-played img:hover {
+  background-color: black;
+  opacity: .5;
+}
+
 /* FOOTER */
 footer {
   height: 70px;
