@@ -191,29 +191,6 @@ h6 {
   width: 100%;
 }
 
-.filter:hover {
-  opacity: 0.5;
-  background-color: black;
-}
-
-.filter {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
-}
-
-.filter i {
-  color: inherit;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3em;
-  display: none;
-}
-
 .recently-played ul {
   display: flex;
   flex-wrap: wrap;
