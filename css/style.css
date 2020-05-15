@@ -1,3 +1,20 @@
+1) STUDIA FLEXBOX
+2) APRI UN PROGETTO PARALLELO PER RICOSTRUIRE IL LAYOUT
+3)RIFAI LA BARRA DI PLAY CON FLEX
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* GENERAL */
 * {
   margin: 0;
@@ -29,7 +46,6 @@ ul {
 }
 
 /* MAIN */
-
 main {
   height: calc( 100vh - 70px );
 }
@@ -116,6 +132,7 @@ a:hover {
 .app-content {
   background-color: #0e294b;
   height: calc(100vh - 70px);
+  overflow: auto;
 }
 
 .top-bar {
@@ -123,10 +140,10 @@ a:hover {
   height: 85px;
   background-color: black;
   opacity: 0.8;
-  float: right;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  position: fixed;
 }
 
 .top-bar a {
@@ -138,8 +155,16 @@ a:hover {
  color: white;
 }
 
+.menu-nav {
+  margin-top: 90px;
+}
+
 .menu-nav a {
   text-decoration: none;
+}
+
+.menu-nav ul {
+  text-align: center;
 }
 
 .menu-nav li {
@@ -153,9 +178,46 @@ a:hover {
   margin-right: 0;
 }
 
-.menu-nav ul {
-  text-align: center;
+.box-img {
+  max-height: 150px;
+  max-width: 150px;
 }
+
+.box-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.box-text {
+  width: 150px;
+}
+
+h5 {
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  width: 100%;
+}
+
+h6 {
+  text-align: center;
+  color: grey;
+  font-weight: 600;
+  width: 100%;
+}
+
+.recently-played ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.recently-played ul li {
+  display: inline-block;
+  margin: 1.2%;
+  justify-content: space-around;
+}
+
 
 /* FOOTER */
 footer {
