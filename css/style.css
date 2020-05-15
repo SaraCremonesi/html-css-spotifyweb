@@ -288,10 +288,17 @@ footer a:hover {
 .control i {
   font-size: 1.7em;
   color: white;
+  margin-bottom: 4%;
+}
+
+.control .far.fa-play-circle {
+  font-size: 2.3em;
+  vertical-align: sub;
 }
 
 .control {
   color: white;
+  width: 100%;
 }
 
 .right-block {
@@ -300,6 +307,10 @@ footer a:hover {
   align-items: center;
   justify-content: flex-end;
   font-weight: 600;
+}
+
+.right-block a {
+  margin: 20%;
 }
 
 .right-block i {
