@@ -149,6 +149,7 @@ a:hover {
 
 .menu-nav ul {
   text-align: center;
+  margin-bottom: 4.5%;
 }
 
 .menu-nav li {
@@ -177,7 +178,7 @@ a:hover {
   width: 150px;
 }
 
-h5 {
+.recently-played h5 {
   color: white;
   text-align: center;
   font-weight: 600;
@@ -206,6 +207,21 @@ h6 {
 .recently-played img:hover {
   background-color: black;
   opacity: .5;
+}
+
+.recently-played h4 {
+  color: white;
+  margin-left: 1.5%;
+  font-weight: 600;
+}
+
+.created-for .suggest {
+  text-align: left;
+  margin-left: 1.5%;
+}
+
+.popular img {
+  border-radius: 50%;
 }
 
 /* FOOTER */
