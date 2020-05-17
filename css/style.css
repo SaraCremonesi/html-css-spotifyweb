@@ -29,11 +29,12 @@ ul {
   width: 100%;
 }
 
-/* MAIN */
+/* inizio main */
 main {
   height: calc( 100% - 70px );
 }
 
+/* inizio barra di navigazione laterale */
 .left-bar {
   float: left;
   width: 200px;
@@ -113,13 +114,16 @@ a:hover {
 .nomi-playlist li:first-child {
   padding-top: 5%;
 }
+/* fine barra di navigazione laterale */
 
+/* inizio contenuto principale app */
 .app-content {
   background-color: #0e294b;
   height: 100%;
   overflow: auto;
 }
 
+/* inizio barra superiore di upgrade */
 .top-bar {
   width: calc(100% - 200px);
   height: 85px;
@@ -141,7 +145,9 @@ a:hover {
  border: 0.6px solid white;
  color: white;
 }
+/* fine barra superiore di upgrade */
 
+/* inizio menu di navigazione superiore */
 .menu-nav {
   margin-top: 90px;
 }
@@ -165,6 +171,9 @@ a:hover {
 .menu-nav li:last-child {
   margin-right: 0;
 }
+/* inizio menu di navigazione superiore */
+
+/* inizio sezioni album */
 .box-img {
   max-height: 150px;
   max-width: 150px;
@@ -224,6 +233,18 @@ h6 {
 .popular img {
   border-radius: 50%;
 }
+/* fine sezioni album */
+/* fine contenuto principale app */
+/* fine main */
+
+/* inizio footer */
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: white;
+}
 
 footer {
   height: 70px;
@@ -265,18 +286,18 @@ footer {
   width: 100px;
 }
 
-.favourite {
+.left-block .favourite {
   display: flex;
   align-items: center;
   margin-left: 1%;
   width: 40px;
 }
 
-.favourite i {
+.left-block .favourite i {
   font-size: 1.3em;
 }
 
-.favourite a {
+.left-block .favourite a {
   margin-right: 35%;
 }
 
@@ -287,15 +308,15 @@ footer {
   flex-direction: column;
 }
 
-.control i {
+.central-block .control i {
   font-size: 1.7em;
 }
 
-.control a:nth-child(3) {
+.central-block .control a:nth-child(3) {
   font-size: 1.7em;
 }
 
-.control a {
+.central-block .control a {
   margin: 0 5%;
 }
 
@@ -315,7 +336,7 @@ footer {
   width: 100%;
 }
 
-.player-bar {
+.central-block .player-bar {
   border: 2px solid white;
   width: 85%;
   border-radius: 20px;
@@ -343,22 +364,16 @@ footer {
   height: 100%;
 }
 
-.volume-bar {
+.right-block .volume-bar {
   border: 2px solid white;
   width: 20%;;
   border-radius: 20px;
 }
+/* fine footer */
 
-footer a {
-  color: white;
-}
-
-footer a:hover {
-  color: white;
-}
-
-/* MEDIA QUERY */
+/* MEDIA QUERY XS*/
 @media screen and (max-width: 768px) {
+  /* inizio barra sinistra di navigazione */
   .left-bar {
     float: left;
     width: 50px;
@@ -390,7 +405,9 @@ footer a:hover {
     height: calc(100% - 60px);
     min-height: 120px;
   }
+  /* fine barra sinistra di navigazione */
 
+  /* inizio barra fissa di upgrade */
   .top-bar {
     width: calc(100% - 50px);
     height: 85px;
@@ -401,8 +418,9 @@ footer a:hover {
     align-items: center;
     justify-content: flex-end;
   }
+  /* fine barra fissa di upgrade */
 
-  .favourite {
+  .left-block .favourite {
     display: flex;
     align-items: center;
     align-content: center;
@@ -410,7 +428,7 @@ footer a:hover {
     margin-left: 5%;
   }
 
-  .favourite i {
+  .left-block .favourite i {
     font-size: 1.3em;
   }
 }
