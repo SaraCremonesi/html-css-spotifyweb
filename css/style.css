@@ -31,7 +31,7 @@ ul {
 
 /* MAIN */
 main {
-  height: calc( 100vh - 70px );
+  height: calc( 100% - 70px );
 }
 
 .left-bar {
@@ -42,7 +42,8 @@ main {
   color: grey;
   font-weight: 600;
   padding: 15px;
-  overflow: hidden; /* per nascondere il contenuto che sborda sotto*/
+  overflow: hidden; /* per nascondere il contenuto che sborda sotto
+                      senza far apparire la scrollbar*/
 }
 
 .left-bar a {
@@ -72,8 +73,8 @@ a:hover {
 }
 
  .playlist-menu {
-  height: calc(100vh - 305px); /*per fissare "account" al bordo in basso senza usare il fix*/
-  overflow: auto;  /*per far apparre la scrollbar*/
+  height: calc(100vh - 305px); /*per fissare "account" al bordo in basso*/
+  overflow: auto;  /*per far apparire la scrollbar*/
 }
 
 .app {
@@ -115,7 +116,7 @@ a:hover {
 
 .app-content {
   background-color: #0e294b;
-  height: calc(100vh - 70px);
+  height: 100%;
   overflow: auto;
 }
 
@@ -128,6 +129,8 @@ a:hover {
   align-items: center;
   justify-content: flex-end;
   position: fixed;
+  z-index: 10;
+  float: left;
 }
 
 .top-bar a {
@@ -162,11 +165,9 @@ a:hover {
 .menu-nav li:last-child {
   margin-right: 0;
 }
-
 .box-img {
   max-height: 150px;
   max-width: 150px;
-  position: relative;
 }
 
 .box-img img {
@@ -195,13 +196,13 @@ h6 {
 .recently-played ul {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  margin: 0 .5%;
 }
 
 .recently-played ul li {
   display: inline-block;
   margin: 1.2%;
-  justify-content: space-around;
+  min-height: 260px; /* per allineare anche i box con un titolo molto lungo */
 }
 
 .recently-played img:hover {
@@ -217,37 +218,29 @@ h6 {
 
 .created-for .suggest {
   text-align: left;
-  margin-left: 1.5%;
+  padding-left: 1.5%;
 }
 
 .popular img {
   border-radius: 50%;
 }
 
-/* FOOTER */
 footer {
   height: 70px;
   width: 100%;
   background-color: grey;
-  padding: 10px;
+  padding: 8px;
   display: flex;
-  justify-content: space-between;
-}
-
-footer a {
-  color: white;
-}
-
-footer a:hover {
-  color: white;
 }
 
 .left-block {
   height: 100%;
+  flex-basis: 30%;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  font-weight: 600;
+}
+
+.left-block a {
+  color: #333;
 }
 
 .left-block h5 {
@@ -256,65 +249,112 @@ footer a:hover {
   margin: 0;
 }
 
-.left-block-text {
-  vertical-align: middle;
-  margin-left: 8%;
-  margin-right: 20%;
-}
-
-.left-block a {
-  color: #333;
-  margin: 3.5%;
-}
-
-.left-block i {
-  font-size: 1.4em;
+.left-block span {
+  font-weight: 600;
 }
 
 .left-block img {
-  height: 45px;
+  height: 100%;
+}
+
+.left-block-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 1.3%;
+  width: 100px;
+}
+
+.favourite {
+  display: flex;
+  align-items: center;
+  margin-left: 1%;
+  width: 40px;
+}
+
+.favourite i {
+  font-size: 1.3em;
+}
+
+.favourite a {
+  margin-right: 35%;
 }
 
 .central-block {
+  height: 100%;
+  flex-basis: 40%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
-  color: white;
-  font-weight: 600;
-  font-size: 1.2em;
+  flex-direction: column;
 }
 
 .control i {
   font-size: 1.7em;
-  color: white;
-  margin-bottom: 4%;
 }
 
-.control .far.fa-play-circle {
-  font-size: 2.3em;
-  vertical-align: sub;
+.control a:nth-child(3) {
+  font-size: 1.7em;
 }
 
-.control {
-  color: white;
+.control a {
+  margin: 0 5%;
+}
+
+.central-block .control {
+  height: 50%;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.central-block .player {
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+}
+
+.player-bar {
+  border: 2px solid white;
+  width: 85%;
+  border-radius: 20px;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 .right-block {
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  font-weight: 600;
-}
-
-.right-block a {
-  margin: 20%;
+  flex-basis: 30%;
 }
 
 .right-block i {
-  font-size: 1.25em;
+  font-size: 1.3em;
+}
+
+.right-block a {
+  margin: 0 3%;
+}
+
+.right-block-commands {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.volume-bar {
+  border: 2px solid white;
+  width: 20%;;
+  border-radius: 20px;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: white;
 }
 
 /* MEDIA QUERY */
@@ -362,4 +402,15 @@ footer a:hover {
     justify-content: flex-end;
   }
 
+  .favourite {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-left: 5%;
+  }
+
+  .favourite i {
+    font-size: 1.3em;
+  }
 }

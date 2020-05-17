@@ -318,7 +318,6 @@
         <!-- fine contenuto app -->
       </main>
       <!-- fine main -->
-
       <!-- inizio footer -->
       <footer>
         <!-- inizio blocco sinistro -->
@@ -326,14 +325,16 @@
           <img src="img/sinister.jpeg" alt="sinister">
           <div class="left-block-text">
             <h5>Sinister</h5>
-            <span>Brano&nbsp;Nome</span>
+            <span>Nome Brano</span>
           </div>
-          <a href="#">
-            <i class="far fa-heart"></i>
-          </a>
-          <a href="#">
-            <i class="far fa-folder"></i>
-          </a>
+          <div class="favourite">
+            <a href="#">
+              <i class="far fa-heart"></i>
+            </a>
+            <a href="#">
+              <i class="far fa-folder"></i>
+            </a>
+          </div>
         </div>
         <!-- fine blocco sinistro -->
         <!-- inizio blocco centrale -->
@@ -359,15 +360,17 @@
           <!-- fine pulsanti di comando -->
           <!-- inizio barra scorrimento -->
           <div class="player">
-            <span>0:25</span>
-
-            <span>4:55</span>
+            <div class="number">0:25</div>
+            <span class="player-bar">
+            </span>
+            <div class="number">4:55</div>
           </div>
           <!-- fine barra scorrimento -->
         </div>
         <!-- fine blocco centrale -->
         <!-- inizio blocco destro -->
         <div class="right-block">
+          <div class="right-block-commands">
           <a href="#">
             <i class="fas fa-sliders-h"></i>
           </a>
@@ -377,7 +380,8 @@
           <a href="#">
             <i class="fas fa-volume-up"></i>
           </a>
-
+          <span class="volume-bar">
+          </span>
         </div>
         <!-- fine blocco destro -->
       </footer>
