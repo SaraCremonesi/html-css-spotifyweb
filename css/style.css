@@ -68,6 +68,27 @@ a:hover {
   line-height: 25px;
 }
 
+.first-menu li {
+  position: relative;
+}
+
+.first-menu li::after {
+  display: none;
+  content: '';
+  width: 3px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  left: -4px;
+  transform: translate(-50% , -50%);
+  background-color: lime;
+  margin-top: .5%;
+}
+
+.first-menu li:hover::after {
+  display: block;
+}
+
 .playlist-menu i {
   font-size: 2.5em;
 }
@@ -183,12 +204,13 @@ a:hover {
   height: 3px;
   position: absolute;
   top: 100%;
-  right: 0;
+  left: 50%;
   transform: translate(-50% , -50%);
+  margin-top: 1.5%;
   background-color: lime;
 }
 
-.menu-nav li:active::after {
+.menu-nav li:hover::after {
   display: block;
 }
 /* fine menu di navigazione superiore */
@@ -358,6 +380,11 @@ footer {
 
 .central-block .control a:nth-child(3) {
   font-size: 1.7em;
+}
+
+.central-block .control a:nth-child(3):hover {
+  font-size: 2em;
+  transition: .2s;
 }
 
 .central-block .control a {
