@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="javascript/script.js">
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify Web</title>
   </head>
@@ -194,6 +195,9 @@
                   <a href="#">
                       <img src="img/metal_lifting.jpg" alt="">
                   </a>
+                  <div class="filter">
+                    <i class="far fa-play-circle"></i>
+                  </div>
                 </div>
                 <div class="box-text">
                   <h5>Heavy Metal</h5>
@@ -205,6 +209,9 @@
                   <a href="#">
                       <img src="img/stranger.jpeg" alt="">
                   </a>
+                  <div class="filter">
+                    <i class="far fa-play-circle"></i>
+                  </div>
                 </div>
                 <div class="box-text">
                   <h5>Stranger Things Vol.1 (a Netflix original series soundtrack)</h5>
@@ -216,6 +223,9 @@
                   <a href="#">
                       <img src="img/aquietplace.jpeg" alt="">
                   </a>
+                  <div class="filter">
+                    <i class="far fa-play-circle"></i>
+                  </div>
                 </div>
                 <div class="box-text">
                   <h5>A quiet place</h5>
@@ -227,6 +237,9 @@
                   <a href="#">
                       <img src="img/split.jpeg" alt="">
                   </a>
+                  <div class="filter">
+                    <i class="far fa-play-circle"></i>
+                  </div>
                 </div>
                 <div class="box-text">
                   <h5>Split</h5>
@@ -238,6 +251,9 @@
                   <a href="#">
                       <img src="img/cure.jpeg" alt="">
                   </a>
+                  <div class="filter">
+                    <i class="far fa-play-circle"></i>
+                  </div>
                 </div>
                 <div class="box-text">
                   <h5>A cure for wellness</h5>
@@ -249,6 +265,9 @@
                   <a href="#">
                     <img src="img/sinister.jpeg" alt="">
                   </a>
+                  <div class="filter">
+                    <i class="far fa-play-circle"></i>
+                  </div>
                 </div>
                 <div class="box-text">
                   <h5>Sinister</h5>
@@ -261,13 +280,16 @@
           <!-- inizio sezione creati per -->
           <div class="created-for recently-played">
             <h4>Creato per John Doe</h4>
-            <h6 class="suggest">Più ascolti, più accurati saranno i suggerimenti</h6>
+            <h6 id="suggest" class="suggest">Più ascolti, più accurati saranno i suggerimenti</h6>
             <ul>
               <li>
                 <div class="box-img">
                   <a href="#">
                       <img src="img/radar.jpeg" alt="">
                   </a>
+                  <div class="filter">
+                    <i class="far fa-play-circle"></i>
+                  </div>
                 </div>
                 <div class="box-text">
                   <h5>Release Radar</h5>
@@ -278,6 +300,9 @@
                   <a href="#">
                       <img src="img/mixdaily.jpeg" alt="">
                   </a>
+                  <div class="filter">
+                    <i class="far fa-play-circle"></i>
+                  </div>
                 </div>
                 <div class="box-text">
                   <h5>Daily Mix 1</h5>
@@ -288,13 +313,16 @@
           <!-- inizio sezione artisti piu popolari -->
           <div class="popular created-for recently-played">
             <h4>Artisti pi&ugrave; popolari</h4>
-            <h6 class="suggest">Più ascolti, più accurati saranno i suggerimenti</h6>
+            <h6 id="suggest" class="suggest">Più ascolti, più accurati saranno i suggerimenti</h6>
             <ul>
               <li>
                 <div class="box-img">
                   <a href="#">
                       <img src="img/youg.jpeg" alt="">
                   </a>
+                  <div class="filter filter-round">
+                    <i class="far fa-play-circle"></i>
+                  </div>
                 </div>
                 <div class="box-text">
                   <h5>Lana Del Rey</h5>
@@ -306,6 +334,9 @@
                   <a href="#">
                       <img src="img/einaudi.jpeg" alt="">
                   </a>
+                  <div class="filter filter-round">
+                    <i class="far fa-play-circle"></i>
+                  </div>
                 </div>
                 <div class="box-text">
                   <h5>Ludovico Einaudi</h5>
@@ -362,6 +393,7 @@
           <div class="player">
             <div class="number">0:25</div>
             <span class="player-bar">
+              <span class="move"></span>
             </span>
             <div class="number">4:55</div>
           </div>
@@ -381,6 +413,7 @@
             <i class="fas fa-volume-up"></i>
           </a>
           <span class="volume-bar">
+            <span class="move volume"></span>
           </span>
         </div>
         <!-- fine blocco destro -->
